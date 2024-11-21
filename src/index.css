@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply custom animation for skill items */
+.skill-item {
+  opacity: 0;
+  transform: translateX(50px); /* Initially position elements off-screen */
+  transition: opacity 1s ease, transform 1s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Animation for items coming from the left */
+.skill-left[data-aos="fade-left"] {
+  animation: slideInFromLeft 1s forwards;
 }
+
+/* Animation for items coming from the right */
+.skill-right[data-aos="fade-right"] {
+  animation: slideInFromRight 1s forwards;
+}
+
+/* Keyframe for sliding in from the left */
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Move in from the left */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End in the normal position */
+  }
+}
+
+/* Keyframe for sliding in from the right */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px); /* Move in from the right */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* End in the normal position */
+  }
+}
+
