@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <>
     <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12 z-[-1]" />
-    <section className="projects text-white py-20 relative">
+    <section className="projects bg-gray-900 text-white py-20 relative">
       {/* Skewed background div */}
       
       
