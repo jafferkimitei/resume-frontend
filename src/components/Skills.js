@@ -48,7 +48,7 @@ const Skills = () => {
                 data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} // Apply animation direction based on position
               >
                 <img
-                  src={`http://localhost:5000/${skill.image}`}  
+                  src={`https://resume-backend-production-3426.up.railway.app/${skill.image}`}  
                   alt={skill.name}
                   className="w-16 h-16 mx-auto mb-4"
                 />

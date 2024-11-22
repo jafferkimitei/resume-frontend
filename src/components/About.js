@@ -50,7 +50,7 @@ const About = () => {
           {aboutData.image && (
             <div className="mt-6 md:mt-0 flex justify-center">
               <img
-                src={`http://localhost:5000/${aboutData.image}`}
+                src={`https://resume-backend-production-3426.up.railway.app/${aboutData.image}`}
                 alt="About Me"
                 className="rounded-lg shadow-lg w-full max-w-md"
               />

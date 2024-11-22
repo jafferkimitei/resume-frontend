@@ -51,14 +51,14 @@ const Projects = () => {
                 {project.viewLink ? (
                   <a href={project.viewLink} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title}`}>
                     <img
-                      src={`http://localhost:5000/${project.image}`} 
+                      src={`https://resume-backend-production-3426.up.railway.app/${project.image}`} 
                       alt={project.title}
                       className="w-full h-48 object-cover rounded-t-lg mb-4 cursor-pointer"
                     />
                   </a>
                 ) : (
                   <img
-                    src={`http://localhost:5000/${project.image}`} 
+                    src={`https://resume-backend-production-3426.up.railway.app/${project.image}`} 
                     alt={project.title}
                     className="w-full h-48 object-cover rounded-t-lg mb-4"
                   />

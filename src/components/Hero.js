@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="rounded-full w-32 h-32 bg-orange-500">
         {/* Profile Image */}
         <img
-          src={`http://localhost:5000/${heroData.profileImage}`}
+          src={`https://resume-backend-production-3426.up.railway.app/${heroData.profileImage}`}
           alt="Your Name"
           className="rounded-full w-full h-full object-cover"
         />

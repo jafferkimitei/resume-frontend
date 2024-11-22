@@ -58,7 +58,7 @@ const Experience = () => {
                   {/* Display Company Logo/Image if available */}
                   {exp.companyImage && (
                     <img
-                      src={`http://localhost:5000/${exp.companyImage}`}
+                      src={`https://resume-backend-production-3426.up.railway.app/${exp.companyImage}`}
                       alt={exp.company}
                       className="w-20 h-20 rounded-full mb-4"
                     />
