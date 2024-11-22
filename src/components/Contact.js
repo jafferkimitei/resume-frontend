@@ -42,7 +42,7 @@ const Contact = () => {
     `);
 
     // Construct mailto URL
-    const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:jafferkimitei@gmail.com?subject=${subject}&body=${body}`;
 
     // Redirect to mailto URL (this opens the user's email client)
     window.location.href = mailtoLink;
