@@ -9,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
     const fetchSkillsData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/skills");
+        const response = await axios.get("https://resume-backend-production-3426.up.railway.app/api/skills");
         // Check if the response contains the data
         if (response.data && Array.isArray(response.data)) {
           setSkills(response.data);  // Update state with fetched skills

@@ -9,7 +9,7 @@ const About = () => {
     // Fetch the About data from the backend API
     const fetchAboutData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/about');
+        const response = await axios.get('https://resume-backend-production-3426.up.railway.app/api/about');
         setAboutData(response.data);  // Update the state with fetched data
         setIsLoading(false);  // Set loading state to false when data is fetched
       } catch (error) {

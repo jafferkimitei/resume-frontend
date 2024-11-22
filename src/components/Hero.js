@@ -11,7 +11,7 @@ const Hero = () => {
     // Fetch the Hero data from the backend API
     const fetchHeroData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/hero");
+        const response = await axios.get("https://resume-backend-production-3426.up.railway.app/api/hero");
         setHeroData(response.data); 
         setLoading(false);
       } catch (error) {

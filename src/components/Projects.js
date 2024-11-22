@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjectsData = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/projects');
+        const response = await axios.get('https://resume-backend-production-3426.up.railway.app/api/projects');
         
         if (response.data && Array.isArray(response.data)) {
           setProjects(response.data);

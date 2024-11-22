@@ -11,7 +11,7 @@ const Experience = () => {
     // Fetch the Experience data from the backend API
     const fetchExperienceData = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/experience");
+        const response = await axios.get("https://resume-backend-production-3426.up.railway.app/api/experience");
         setExperiences(response.data || []); // Fallback to an empty array if no data
       } catch (error) {
         console.error("Error fetching Experience data:", error);
