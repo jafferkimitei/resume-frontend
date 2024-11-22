@@ -33,7 +33,7 @@ const Skills = () => {
 
   return (
     <section className="skills bg-gray-900 text-white py-20">
-        <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+        <div className='w-full absolute bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
       <div className="container mx-auto px-4">
         <h3 className='text-center mb-4 uppercase tracking-[20px] text-gray-500 text-2xl md:text-3xl lg:text-4xl'>
           Skills

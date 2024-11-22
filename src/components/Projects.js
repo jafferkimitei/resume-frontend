@@ -75,7 +75,7 @@ const Projects = () => {
                   <span className="underline decoration-[#F7AB0A]/50">
                     Case Study {i + 1} of {projects.length}:
                   </span> {project.title}
-                  <div className='w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[500px] -skew-y-12' />
+                 
                 </motion.h4>
                 <p className="text-xs sm:text-base md:text-lg lg:text-xl text-center md:text-left">
                   {project.description || project.summary}
