@@ -44,7 +44,7 @@ const Hero = () => {
           className="rounded-full w-full h-full object-cover"
         />
       </div>
-      <h2 className="z-20 text-xs sm:text-sm md:text-base mt-4 uppercase text-gray-500 pb-2 tracking-[5px] sm:tracking-[10px] md:tracking-[15px]">{heroData.role || "Software Developer"}</h2>
+      <h2 className="z-20 text-xs sm:text-sm md:text-base mt-4 uppercase text-gray-500 pb-2 tracking-[5px] sm:tracking-[10px] md:tracking-[15px]">{heroData.role || "Full Stack Developer"}</h2>
      {/* Typewriter Component */}
      <h1 className="z-20 text-base mt-2">
         <Typewriter
