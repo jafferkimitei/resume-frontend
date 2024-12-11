@@ -70,7 +70,7 @@ const Projects = () => {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1.2 }}
-                  className="text-2xl md:text-4xl lg:text-5xl font-semibold text-center"
+                  className="text-xl md:text-2xl lg:text-4xl font-semibold text-center"
                 >
                   <span className="underline decoration-[#F7AB0A]/50">
                     Case Study {i + 1} of {projects.length}:
