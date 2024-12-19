@@ -9,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
     const fetchSkillsData = async () => {
       try {
-        const response = await axios.get("https://resume-backend-production-3426.up.railway.app/api/skills");
+        const response = await axios.get("https://resume-backend-qkw5.onrender.com/api/skills");
         // Check if the response contains the data
         if (response.data && Array.isArray(response.data)) {
           setSkills(response.data);  // Update state with fetched skills
@@ -49,7 +49,7 @@ const Skills = () => {
                 data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} // Apply animation direction based on position
               >
                 <img
-                  src={`https://resume-backend-production-3426.up.railway.app/${skill.image}`}  
+                  src={`https://resume-backend-qkw5.onrender.com/${skill.image}`}  
                   alt={skill.name}
                   className="w-16 h-16 mx-auto mb-4"
                 />

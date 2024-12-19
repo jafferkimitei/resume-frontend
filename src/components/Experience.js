@@ -11,7 +11,7 @@ const Experience = () => {
     // Fetch the Experience data from the backend API
     const fetchExperienceData = async () => {
       try {
-        const response = await axios.get("https://resume-backend-production-3426.up.railway.app/api/experience");
+        const response = await axios.get("https://resume-backend-qkw5.onrender.com/api/experience");
         setExperiences(response.data || []); // Fallback to an empty array if no data
       } catch (error) {
         console.error("Error fetching Experience data:", error);
@@ -58,7 +58,7 @@ const Experience = () => {
                   {/* Display Company Logo/Image if available */}
                   {exp.companyImage && (
                     <img
-                      src={`https://resume-backend-production-3426.up.railway.app/${exp.companyImage}`}
+                      src={`https://resume-backend-qkw5.onrender.com/${exp.companyImage}`}
                       alt={exp.company}
                       className="w-20 h-20 rounded-full mb-4"
                     />

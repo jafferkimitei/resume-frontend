@@ -11,7 +11,7 @@ const Hero = () => {
     // Fetch the Hero data from the backend API
     const fetchHeroData = async () => {
       try {
-        const response = await axios.get("https://resume-backend-production-3426.up.railway.app/api/hero");
+        const response = await axios.get("https://resume-backend-qkw5.onrender.com/api/hero");
         setHeroData(response.data); 
         setLoading(false);
       } catch (error) {
@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="rounded-full w-32 h-32 bg-orange-500">
         {/* Profile Image */}
         <img
-          src={`https://resume-backend-production-3426.up.railway.app/${heroData.profileImage}`}
+          src={`https://resume-backend-qkw5.onrender.com/${heroData.profileImage}`}
           alt="Your Name"
           className="rounded-full w-full h-full object-cover"
         />

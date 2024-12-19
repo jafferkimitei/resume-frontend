@@ -9,7 +9,7 @@ const About = () => {
     // Fetch the About data from the backend API
     const fetchAboutData = async () => {
       try {
-        const response = await axios.get('https://resume-backend-production-3426.up.railway.app/api/about');
+        const response = await axios.get('https://resume-backend-qkw5.onrender.com/api/about');
         setAboutData(response.data);  // Update the state with fetched data
         setIsLoading(false);  // Set loading state to false when data is fetched
       } catch (error) {
@@ -50,7 +50,7 @@ const About = () => {
           {aboutData.image && (
             <div className="mt-6 md:mt-0 flex justify-center">
               <img
-                src={`https://resume-backend-production-3426.up.railway.app/${aboutData.image}`}
+                src={`https://resume-backend-qkw5.onrender.com/${aboutData.image}`}
                 alt="About Me"
                 className="rounded-lg shadow-lg w-full max-w-md"
               />

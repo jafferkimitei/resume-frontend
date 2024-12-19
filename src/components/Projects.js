@@ -10,7 +10,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjectsData = async () => {
       try {
-        const response = await axios.get('https://resume-backend-production-3426.up.railway.app/api/projects');
+        const response = await axios.get('https://resume-backend-qkw5.onrender.com/api/projects');
         
         if (response.data && Array.isArray(response.data)) {
           setProjects(response.data);
@@ -51,14 +51,14 @@ const Projects = () => {
                 {project.viewLink ? (
                   <a href={project.viewLink} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title}`}>
                     <img
-                      src={`https://resume-backend-production-3426.up.railway.app/${project.image}`} 
+                      src={`https://resume-backend-qkw5.onrender.com/${project.image}`} 
                       alt={project.title}
                       className="w-full h-48 object-cover rounded-t-lg mb-4 cursor-pointer"
                     />
                   </a>
                 ) : (
                   <img
-                    src={`https://resume-backend-production-3426.up.railway.app/${project.image}`} 
+                    src={`https://resume-backend-qkw5.onrender.com/${project.image}`} 
                     alt={project.title}
                     className="w-full h-48 object-cover rounded-t-lg mb-4"
                   />
